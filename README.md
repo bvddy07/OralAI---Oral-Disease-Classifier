@@ -3,6 +3,9 @@
 OralAI is a deep learning project built with PyTorch that classifies oral diseases from images using a fine-tuned ResNet50 model.
 The goal is to provide a tool that can automatically identify different oral conditions from patient images.
 
+You can try the live demo here:
+https://huggingface.co/spaces/bxddy/OralAI
+
 ## Setup
 
 1. Clone the repository
@@ -49,4 +52,5 @@ python scripts/predict\_random.py
 ## License
 
 This project is licensed under the MIT License.
+
 
