@@ -1,7 +1,3 @@
-Got it 👍 Here’s a plain and simple version of the README — no boxes, no extra formatting, just clean text you can paste directly:
-
----
-
 # 🦷 OralAI — Oral Disease Classifier
 
 OralAI is a deep learning project built with PyTorch that classifies oral diseases from images using a fine-tuned ResNet50 model.
@@ -53,3 +49,4 @@ python scripts/predict\_random.py
 ## License
 
 This project is licensed under the MIT License.
+
