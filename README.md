@@ -1,95 +1,55 @@
-Got it 👍 Here’s a cleaner **README.md** without the project structure section — you can copy-paste this directly:
+Got it 👍 Here’s a plain and simple version of the README — no boxes, no extra formatting, just clean text you can paste directly:
 
 ---
 
-````markdown
 # 🦷 OralAI — Oral Disease Classifier
 
-OralAI is a deep learning project built with **PyTorch** that classifies oral diseases from images using a fine-tuned **ResNet50** model.  
+OralAI is a deep learning project built with PyTorch that classifies oral diseases from images using a fine-tuned ResNet50 model.
 The goal is to provide a tool that can automatically identify different oral conditions from patient images.
 
----
+## Setup
 
-## ⚙️ Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/bvdyy07/OralAI---Oral-Disease-Classifier.git
+1. Clone the repository
+   git clone [https://github.com/bvdyy07/OralAI---Oral-Disease-Classifier.git](https://github.com/bvdyy07/OralAI---Oral-Disease-Classifier.git)
    cd OralAI---Oral-Disease-Classifier
-````
 
-2. **Create and activate a virtual environment**
-
-   ```bash
+2. Create and activate a virtual environment
    python -m venv venv
-   source venv/bin/activate   # Linux/Mac
-   venv\Scripts\activate      # Windows
-   ```
+   source venv/bin/activate   (Linux/Mac)
+   venv\Scripts\activate      (Windows)
 
-3. **Install dependencies**
-
-   ```bash
+3. Install dependencies
    pip install -r requirements.txt
-   ```
 
----
+## Usage
 
-## 🚀 Usage
+Training (if you want to retrain)
+python scripts/run\_training.py
 
-### 🔹 Training (if you want to retrain)
+Evaluation
+python scripts/run\_evaluation.py
 
-```bash
-python scripts/run_training.py
-```
+Random Prediction
+python scripts/predict\_random.py
 
-### 🔹 Evaluation
+## Model Details
 
-```bash
-python scripts/run_evaluation.py
-```
+* Base Model: ResNet50 (pretrained on ImageNet)
+* Image Size: 128x128
+* Optimizer: Adam
+* Loss Function: CrossEntropyLoss
+* Epochs: 10
+* Batch Size: 32
 
-### 🔹 Random Prediction
+## Results
 
-```bash
-python scripts/predict_random.py
-```
+* Test Accuracy: 96 %
 
----
-
-## 🧠 Model Details
-
-* **Base Model:** ResNet50 (pretrained on ImageNet)
-* **Image Size:** 128x128
-* **Optimizer:** Adam
-* **Loss Function:** CrossEntropyLoss
-* **Epochs:** 10
-* **Batch Size:** 32
-
----
-
-## 📊 Results
-
-* Training Accuracy: \~XX% (replace with your results)
-* Test Accuracy: \~XX% (replace with your results)
-
----
-
-## 📌 Notes
+## Notes
 
 * Trained model is saved in `models/OralAI.pth` (not included in repo due to GitHub’s 100 MB file size limit).
 * Update `config.py` to set dataset paths before training.
 
----
+## License
 
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
-```
-
----
-
-✅ This version is short, clean, and GitHub-ready.  
-
-Do you also want me to add **badges at the top** (Python, PyTorch, License) to make it more professional?
-```
+This project is licensed under the MIT License.
