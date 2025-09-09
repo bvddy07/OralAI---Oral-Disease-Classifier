@@ -46,11 +46,12 @@ python scripts/predict\_random.py
 
 ## Notes
 
-* Trained model is saved in `models/OralAI.pth` (not included in repo due to GitHub’s 100 MB file size limit).
+* Trained model is saved in `models/OralAI.pth`
 * Update `config.py` to set dataset paths before training.
 
 ## License
 
 This project is licensed under the MIT License.
+
 
 
